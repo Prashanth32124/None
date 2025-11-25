@@ -17,13 +17,14 @@ they slowly became the best part of my days.
 It just happened… naturally, beautifully.
 
 And now I know it clearly:
-I love you, bunny.
+**I love you, bunny.**
 Not just a little… but truly, softly, and honestly.
 
-I don’t expect anything from you, but u are mine.
+I don’t expect anything from you, but u i want You.
 I just wanted you to know what my heart feels. 🤍🐰
 
-And this my proposal my lovely bunny ❤️ 
+And this my proposal my lovely bunny ❤️  
+[ **will u be my love?** ]
 `;
 
   return (
@@ -49,7 +50,7 @@ And this my proposal my lovely bunny ❤️
 
             <div style={{ marginTop: "25px" }}>
               <button className="accept-btn" onClick={() => setAccepted(true)}>
-                Accept[will u be my love?]
+                Accept
               </button>
 
               <button className="reject-btn">

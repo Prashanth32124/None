@@ -68,10 +68,27 @@ const popup = () => {
         )}
 
         {accepted && (
-          <h2 className="final-text">
-            I love u najma, I am waiting in Insta for your response ❤️
-          </h2>
-        )}
+  <div className="love-letter">
+    <p>
+      Hey my bunny… 💗<br/><br/>
+      From this moment, you are my love… and I am yours.  
+      Not just for today, not just for a moment—  
+      but for every little smile, every silly fight,  
+      every soft “I miss you”, every late-night talk that feels like magic.  
+      <br/><br/>
+      Whatever happens—good days or bad days,  
+      we stay together like this.  
+      If you’re quiet, I’ll wait.  
+      If you’re sad, I’ll hold you.  
+      If you’re happy, I’ll celebrate with you.  
+      <br/><br/>
+      From now on… it's you and me, bunny.  
+      My little cute heart. ❤️🐰  
+      And nothing can change that.
+    </p>
+  </div>
+)}
+
       </div>
 
       {/* CSS */}
@@ -223,6 +240,33 @@ const popup = () => {
     opacity: 1;
   }
 }
+  .love-letter {
+  width: 85%;
+  margin-top: 30px;
+  padding: 25px;
+  background: url('https://i.imgur.com/v4ZQ4qZ.png'); /* old paper texture */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+
+  /* Torn edges effect */
+  border: 2px solid rgba(120, 90, 60, 0.4);
+  box-shadow: 0 0 25px rgba(70, 45, 20, 0.4),
+              inset 0 0 15px rgba(120, 90, 60, 0.4);
+
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #3a2a1a;
+
+  animation: oldLetter 0.7s ease-in-out;
+}
+
+@keyframes oldLetter {
+  0% { opacity: 0; transform: scale(0.9) rotate(-1deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
       `}</style>
     </>
   );

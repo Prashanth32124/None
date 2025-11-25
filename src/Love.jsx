@@ -66,111 +66,144 @@ I just wanted you to know what my heart feels. 🤍🐰
 
       {/* CSS */}
       <style>{`
-        .love-container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-top: 40px;
-          font-family: "Poppins", Arial, sans-serif;
-          animation: fadeIn 1s ease-in-out;
-        }
+         /* Main container */
+.love-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  font-family: "Poppins", Arial, sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
 
-        .heart-btn {
-          background-color: #ff4d6d;
-          color: white;
-          padding: 14px 26px;
-          font-size: 20px;
-          border-radius: 14px;
-          border: none;
-          cursor: pointer;
-          transition: transform 0.3s ease, box-shadow 0.3s;
-          box-shadow: 0 4px 12px rgba(255, 0, 72, 0.4);
-        }
+/* Heart button */
+.heart-btn {
+  background-color: #ff4d6d;
+  color: white;
+  padding: 14px 26px;
+  font-size: 20px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  box-shadow: 0 4px 12px rgba(255, 0, 72, 0.4);
+}
 
-        .heart-btn:hover {
-          transform: scale(1.08);
-          box-shadow: 0 6px 18px rgba(255, 0, 72, 0.6);
-        }
+.heart-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(255, 0, 72, 0.6);
+}
 
-        .love-box {
-          width: 80%;
-          margin-top: 25px;
-          padding: 30px;
-          border-radius: 20px;
-          background: rgba(255, 220, 226, 0.95);
-          text-align: center;
-          font-size: 20px;
-          font-weight: 500;
-          white-space: pre-line;
-          line-height: 1.7;
-          box-shadow: 0 0 22px rgba(255, 140, 160, 0.6);
-          animation: popUp 0.5s ease-in-out;
-        }
+/* Love paragraph box */
+.love-box {
+  width: 80%;
+  margin-top: 25px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 220, 226, 0.95);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  white-space: pre-line;
+  line-height: 1.7;
+  box-shadow: 0 0 22px rgba(255, 140, 160, 0.6);
+  animation: popUp 0.5s ease-in-out;
+}
 
-        /* Bunny + Bear image row */
-        .img-row {
-          display: flex;
-          justify-content: center;
-          gap: 20px;
-          margin-bottom: 25px;
-          animation: fadeIn 1s ease-in-out;
-        }
+/* ==== Image Section ==== */
+.img-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 25px;
 
-        .love-img {
-          width: 120px;
-          height: 120px;
-          object-fit: contain;
-          border-radius: 20px;
-          box-shadow: 0 0 15px rgba(255, 100, 130, 0.6);
-          animation: popUp 0.5s ease-in-out;
-        }
+  padding: 15px;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 230, 235, 0.7),
+    rgba(255, 200, 215, 0.7)
+  );
+  backdrop-filter: blur(6px);
+  box-shadow: 0 5px 25px rgba(255, 150, 170, 0.3);
+}
 
-        .accept-btn {
-          background-color: #22c55e;
-          color: white;
-          padding: 12px 22px;
-          border: none;
-          border-radius: 10px;
-          font-size: 17px;
-          cursor: pointer;
-          transition: 0.3s;
-          box-shadow: 0 4px 10px rgba(0, 150, 60, 0.3);
-        }
+.love-img {
+  width: 160px;
+  height: auto;
+  border-radius: 18px;
 
-        .accept-btn:hover {
-          transform: scale(1.07);
-          box-shadow: 0 6px 14px rgba(0, 150, 60, 0.4);
-        }
+  /* Soft glow */
+  box-shadow: 0 8px 25px rgba(255, 120, 160, 0.35);
 
-        .reject-btn {
-          background-color: #777;
-          color: white;
-          padding: 12px 22px;
-          border: none;
-          border-radius: 10px;
-          font-size: 17px;
-          cursor: not-allowed;
-          opacity: 0.7;
-        }
+  /* Animation */
+  animation: softPop 0.6s ease;
 
-        .final-text {
-          margin-top: 30px;
-          color: #8b2be2;
-          font-size: 26px;
-          font-weight: bold;
-          animation: fadeIn 1s ease-in-out;
-        }
+  /* Border */
+  border: 3px solid rgba(255, 200, 210, 0.4);
+}
 
-        /* Animations */
-        @keyframes fadeIn {
-          0% {opacity: 0;}
-          100% {opacity: 1;}
-        }
+/* Accept button */
+.accept-btn {
+  background-color: #22c55e;
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 150, 60, 0.3);
+}
 
-        @keyframes popUp {
-          0% {transform: scale(0.7); opacity: 0;}
-          100% {transform: scale(1); opacity: 1;}
-        }
+.accept-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 14px rgba(0, 150, 60, 0.4);
+}
+
+/* Reject button */
+.reject-btn {
+  background-color: #777;
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Final text after accept */
+.final-text {
+  margin-top: 30px;
+  color: #8b2be2;
+  font-size: 26px;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* ==== Animations ==== */
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes popUp {
+  0% {transform: scale(0.7); opacity: 0;}
+  100% {transform: scale(1); opacity: 1;}
+}
+
+@keyframes softPop {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
       `}</style>
     </>
   );

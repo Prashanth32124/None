@@ -99,7 +99,7 @@ const popup = () => {
 
     {/* ❤️ Extra line you asked for */}
     <h2 className="after-letter">
-      I love u Najma… I’m waiting for your response in Instagram ❤️
+      I love u Najma… I’m waiting for you in Insta ❤️ 
     </h2>
   </>
 )}

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import img1 from "./images/1.png";
+import img2 from "./images/Main.png";
 
 export default function Love() {
   const [showMessage, setShowMessage] = useState(false);
@@ -18,9 +20,9 @@ And now I know it clearly:
 I love you, bunny.
 Not just a little… but truly, softly, and honestly.
 
-I don’t expect anything from you,but u are mine
+I don’t expect anything from you, but u are mine.
 I just wanted you to know what my heart feels. 🤍🐰
-  `;
+`;
 
   return (
     <>
@@ -34,13 +36,17 @@ I just wanted you to know what my heart feels. 🤍🐰
 
         {showMessage && !accepted && (
           <div className="love-box">
+
+            {/* Bunny + Bear Images */}
+            <div className="img-row">
+              <img src={img1} className="love-img" alt="bunny" />
+              <img src={img2} className="love-img" alt="bear" />
+            </div>
+
             {loveText}
 
             <div style={{ marginTop: "25px" }}>
-              <button
-                className="accept-btn"
-                onClick={() => setAccepted(true)}
-              >
+              <button className="accept-btn" onClick={() => setAccepted(true)}>
                 Accept
               </button>
 
@@ -53,12 +59,12 @@ I just wanted you to know what my heart feels. 🤍🐰
 
         {accepted && (
           <h2 className="final-text">
-            I love u najma , I am waiting in Insta for your response ❤️
+            I love u najma, I am waiting in Insta for your response ❤️
           </h2>
         )}
       </div>
 
-      {/* CSS BELOW */}
+      {/* CSS */}
       <style>{`
         .love-container {
           display: flex;
@@ -98,6 +104,24 @@ I just wanted you to know what my heart feels. 🤍🐰
           white-space: pre-line;
           line-height: 1.7;
           box-shadow: 0 0 22px rgba(255, 140, 160, 0.6);
+          animation: popUp 0.5s ease-in-out;
+        }
+
+        /* Bunny + Bear image row */
+        .img-row {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          margin-bottom: 25px;
+          animation: fadeIn 1s ease-in-out;
+        }
+
+        .love-img {
+          width: 120px;
+          height: 120px;
+          object-fit: contain;
+          border-radius: 20px;
+          box-shadow: 0 0 15px rgba(255, 100, 130, 0.6);
           animation: popUp 0.5s ease-in-out;
         }
 

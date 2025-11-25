@@ -68,7 +68,15 @@ const popup = () => {
         )}
 
         {accepted && (
-  <div className="love-letter">
+    <div
+    className="love-letter"
+    style={{
+      backgroundImage: `url(${img3})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat"
+    }}
+  >
     <p>
       Hey my bunny… 💗<br/><br/>
       From this moment, you are my love… and I am yours.  
@@ -241,32 +249,82 @@ const popup = () => {
   }
 }
 .love-letter {
-  width: 85%;
+  width: 80%;
+  max-width: 650px;
   margin-top: 30px;
   padding: 45px 35px;
+
+  /* Background image */
   background-image: url(${img3});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
 
-  /* Torn edges feel */
-  border-radius: 12px;
-  box-shadow: 0 0 25px rgba(70, 45, 20, 0.4),
-              inset 0 0 20px rgba(120, 90, 60, 0.3);
-
+  /* Text styling */
   font-family: "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.8;
-  color: #3a2a1a;
+  color: #1a1a1a;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.6);
 
-  animation: oldLetter 0.7s ease-in-out;
+  animation: oldLetter 0.6s ease-in-out;
 }
 
+.love-letter {
+  width: 80%;
+  max-width: 650px;
+  margin-top: 30px;
+  padding: 45px 35px;
+
+  /* Background image */
+  background-image: url(${img3});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+
+  /* Text styling */
+  font-family: "Times New Roman", serif;
+  font-size: 22px;
+  line-height: 1.8;
+  color: #2e1a0f;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.4);
+
+  animation: oldLetter 0.6s ease-in-out;
+}
+
+/* Soft overlay for readability */
+.love-letter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  /* ✨ PERFECT OPACITY (not too bright, not too faded) */
+  background: rgba(255,255,255,0.32);  
+  backdrop-filter: blur(1px);
+
+  z-index: 0;
+}
+
+/* Bring text above overlay */
+.love-letter p {
+  position: relative;
+  z-index: 2;
+}
 
 @keyframes oldLetter {
   0% { opacity: 0; transform: scale(0.9) rotate(-1deg); }
   100% { opacity: 1; transform: scale(1) rotate(0deg); }
 }
+
+
 
       `}</style>
     </>

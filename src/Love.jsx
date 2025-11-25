@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import img1 from "./images/1.png";
 import img2 from "./images/Main.png";
-
+import img3 from "./images/l.png";
 export default function Love() {
   const [showMessage, setShowMessage] = useState(false);
   const [accepted, setAccepted] = useState(false);
@@ -240,27 +240,28 @@ const popup = () => {
     opacity: 1;
   }
 }
-  .love-letter {
+.love-letter {
   width: 85%;
   margin-top: 30px;
-  padding: 25px;
-  background: url('https://i.imgur.com/v4ZQ4qZ.png'); /* old paper texture */
+  padding: 45px 35px;
+  background-image: url(${img3});
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  border-radius: 10px;
 
-  /* Torn edges effect */
-  border: 2px solid rgba(120, 90, 60, 0.4);
+  /* Torn edges feel */
+  border-radius: 12px;
   box-shadow: 0 0 25px rgba(70, 45, 20, 0.4),
-              inset 0 0 15px rgba(120, 90, 60, 0.4);
+              inset 0 0 20px rgba(120, 90, 60, 0.3);
 
   font-family: "Times New Roman", serif;
   font-size: 20px;
-  line-height: 1.7;
+  line-height: 1.8;
   color: #3a2a1a;
 
   animation: oldLetter 0.7s ease-in-out;
 }
+
 
 @keyframes oldLetter {
   0% { opacity: 0; transform: scale(0.9) rotate(-1deg); }

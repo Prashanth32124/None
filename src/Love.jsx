@@ -129,19 +129,21 @@ I just wanted you to know what my heart feels. 🤍🐰
 }
 
 .love-img {
-  width: 160px;
-  height: auto;
-  border-radius: 18px;
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 20px;
 
   /* Soft glow */
-  box-shadow: 0 8px 25px rgba(255, 120, 160, 0.35);
+  box-shadow: 0 6px 20px rgba(255, 120, 160, 0.30);
 
   /* Animation */
   animation: softPop 0.6s ease;
 
-  /* Border */
-  border: 3px solid rgba(255, 200, 210, 0.4);
+  /* Soft border */
+  border: 3px solid rgba(255, 200, 210, 0.35);
 }
+
 
 /* Accept button */
 .accept-btn {

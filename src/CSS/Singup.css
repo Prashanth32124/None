@@ -1,0 +1,162 @@
+#Maincontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+#container32124 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#container2246 {
+    margin-top: 3%;
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 20px 300px;
+    overflow: hidden; /* keep the image clipped but not its container */
+}
+
+#container2246 img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+#container2246 img:hover {
+    transform: scale(1.05);
+}
+
+/* Labels & Inputs */
+.label, .label1, .label2 {
+    font-size: larger;
+    margin-left: 43%;
+    margin-bottom: 2%;
+}
+
+.label2 {
+    margin-top: 10%;
+    margin-left: 44%;
+}
+
+.input, .input2 {
+    padding: 10px;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+}
+
+.input:focus {
+    border-color: aqua;
+    outline: none;
+    box-shadow: 0 0 5px aqua;
+}
+
+.but1 {
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    border-radius: 10px;
+}
+
+#p {
+    margin-left: 25%;
+}
+
+#newh {
+    margin-top: 20%;
+    font-size: xx-large;
+    margin-left: 10%;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  #Maincontainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container2246 {
+    height: auto;
+    border-radius: 20px;
+  }
+
+  #container2246 img {
+    height: auto;
+    max-height: 60vh; /* make sure it’s visible */
+  }
+
+  .label, .label1, .label2 {
+    margin-left: 5%;
+    font-size: medium;
+    text-align: center;
+  }
+
+  .input, .input2 {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .but1 {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  #newh {
+    margin-top: 10%;
+    font-size: x-large;
+    margin-left: 5%;
+  }
+
+  #p {
+    margin-left: 10%;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  #container2246 {
+    height: auto;
+    border-radius: 10px;
+  }
+
+  #container2246 img {
+    height: auto;
+    max-height: 50vh;
+  }
+
+  .label, .label1, .label2 {
+    font-size: small;
+  }
+
+  .input, .input2 {
+    padding: 8px;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .but1 {
+    width: 80%;
+    margin-left: 10%;
+    padding: 8px;
+  }
+
+  #newh {
+    font-size: large;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+
+  #p {
+    font-size: small;
+    margin-left: 5%;
+  }
+}

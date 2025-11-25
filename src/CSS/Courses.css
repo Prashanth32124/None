@@ -1,0 +1,79 @@
+.courses-page {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Main title */
+.title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Row of course boxes using flex */
+.courses-row {
+  display: flex;
+  gap: 20px;          
+  flex-wrap: wrap;     
+}
+
+/* Individual course boxes stacked as columns */
+.course-box {
+  flex: 1 1 22%;       
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  align-items: center;      /* center content horizontally */
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fff;
+  min-height: 300px;        /* increased height for image */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;       /* center text */
+}
+
+/* Image inside box */
+.course-box img {
+  width: 100%;          /* scale image to fit box */
+  max-height: 300px;   /* optional max height */
+  object-fit: cover;
+  margin-top: 15px;    /* space below text */
+  border-radius: 8px;
+}
+
+/* Hover effect */
+.course-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  background-color: #e6f0ff;
+}
+
+/* Title inside box */
+.course-box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Subtitle inside box */
+.course-box p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .course-box {
+    flex: 1 1 45%;  
+  }
+}
+
+@media (max-width: 600px) {
+  .course-box {
+    flex: 1 1 100%; 
+  }
+}

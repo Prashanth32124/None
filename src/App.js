@@ -1,23 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './Login.jsx';
+import Signup from './Signup.jsx';
+import Courses from './Courses.jsx';
+import Phishingattack from './Phishingattack.jsx';
+import questionsData from './questionsData.jsx';
+import Game from './Game.jsx';
+import Sgame from './Sgame.jsx';
+import Socialdata from './Socialdata.jsx';
+import QuishGame from './QuishGame.jsx';
+import Love from './Love.jsx';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/phishingattack" element={<Phishingattack />} />
+          <Route path="/questionsData" element={<questionsData />} />
+          <Route path="/Game" element={<Game />} />
+          <Route path="/Sgame" element={<Sgame />} />
+          <Route path="/QuishGame" element={<QuishGame />} />
+          <Route path="/" element={<Love />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

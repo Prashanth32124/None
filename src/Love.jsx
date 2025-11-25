@@ -22,6 +22,8 @@ Not just a little… but truly, softly, and honestly.
 
 I don’t expect anything from you, but u are mine.
 I just wanted you to know what my heart feels. 🤍🐰
+
+And this my proposal my lovely bunny ❤️ 
 `;
 
   return (
@@ -47,7 +49,7 @@ I just wanted you to know what my heart feels. 🤍🐰
 
             <div style={{ marginTop: "25px" }}>
               <button className="accept-btn" onClick={() => setAccepted(true)}>
-                Accept
+                Accept[will u be my love?]
               </button>
 
               <button className="reject-btn">

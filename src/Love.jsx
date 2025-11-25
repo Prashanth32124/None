@@ -68,34 +68,42 @@ const popup = () => {
         )}
 
         {accepted && (
+  <>
     <div
-    className="love-letter"
-    style={{
-      backgroundImage: `url(${img3})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat"
-    }}
-  >
-    <p>
-      Hey my bunny… 💗<br/><br/>
-      From this moment, you are my love… and I am yours.  
-      Not just for today, not just for a moment—  
-      but for every little smile, every silly fight,  
-      every soft “I miss you”, every late-night talk that feels like magic.  
-      <br/><br/>
-      Whatever happens—good days or bad days,  
-      we stay together like this.  
-      If you’re quiet, I’ll wait.  
-      If you’re sad, I’ll hold you.  
-      If you’re happy, I’ll celebrate with you.  
-      <br/><br/>
-      From now on… it's you and me, bunny.  
-      My little cute heart. ❤️🐰  
-      And nothing can change that.
-    </p>
-  </div>
+      className="love-letter"
+      style={{
+        backgroundImage: `url(${img3})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
+    >
+      <p>
+        Hey my bunny… 💗<br/><br/>
+        From this moment, you are my love… and I am yours.  
+        Not just for today, not just for a moment—  
+        but for every little smile, every silly fight,  
+        every soft “I miss you”, every late-night talk that feels like magic.  
+        <br/><br/>
+        Whatever happens—good days or bad days,  
+        we stay together like this.  
+        If you’re quiet, I’ll wait.  
+        If you’re sad, I’ll hold you.  
+        If you’re happy, I’ll celebrate with you.  
+        <br/><br/>
+        From now on… it's you and me, bunny.  
+        My little cute heart. ❤️🐰  
+        And nothing can change that.
+      </p>
+    </div>
+
+    {/* ❤️ Extra line you asked for */}
+    <h2 className="after-letter">
+      I love u Najma… I’m waiting for your response in Instagram ❤️
+    </h2>
+  </>
 )}
+
 
       </div>
 
@@ -262,6 +270,16 @@ const popup = () => {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
+
+  .after-letter {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #d6336c;
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 1.2s ease-in-out;
+}
 
   /* Text styling */
   font-family: "Times New Roman", serif;

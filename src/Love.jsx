@@ -26,6 +26,13 @@ I just wanted you to know what my heart feels. 🤍🐰
 And this my proposal my lovely bunny ❤️  
 [ **will u be my love?** ]
 `;
+const popup = () => {
+  alert(
+    "Hey bunny, you aren’t eligible to reject 😆\n" +
+    "You can’t see my heart… how it feels, my little heart 💗🐰\n\n" +
+    "I am sorry bunny, but the reject button is disabled. Please accept my love ❤️"
+  );
+};
 
   return (
     <>
@@ -53,7 +60,7 @@ And this my proposal my lovely bunny ❤️
                 Accept
               </button>
 
-              <button className="reject-btn">
+              <button className="reject-btn" Onclcik={popup}>
                 Reject
               </button>
             </div>
@@ -166,17 +173,24 @@ And this my proposal my lovely bunny ❤️
   box-shadow: 0 6px 14px rgba(0, 150, 60, 0.4);
 }
 
-/* Reject button */
 .reject-btn {
-  background-color: #777;
+  background-color: #f87171;
   color: white;
   padding: 12px 22px;
   border: none;
   border-radius: 10px;
   font-size: 17px;
-  cursor: not-allowed;
-  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(255, 120, 120, 0.3);
 }
+
+.reject-btn:hover {
+  transform: scale(1.05);
+  background-color: #ef4444;
+  box-shadow: 0 6px 14px rgba(255, 100, 100, 0.4);
+}
+
 
 /* Final text after accept */
 .final-text {

@@ -60,7 +60,7 @@ const popup = () => {
                 Accept
               </button>
 
-              <button className="reject-btn" Onclcik={popup}>
+              <button className="reject-btn" onClcik={popup}>
                 Reject
               </button>
             </div>

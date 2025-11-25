@@ -18,7 +18,7 @@ And now I know it clearly:
 I love you, bunny.
 Not just a little… but truly, softly, and honestly.
 
-I don’t expect anything from you,
+I don’t expect anything from you,but u are mine
 I just wanted you to know what my heart feels. 🤍🐰
   `;
 
